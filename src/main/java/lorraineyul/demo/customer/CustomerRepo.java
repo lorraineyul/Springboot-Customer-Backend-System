@@ -1,5 +1,7 @@
 package lorraineyul.demo.customer;
 
-public interface CustomerRepo {
+import java.util.List;
 
+public interface CustomerRepo {
+    List<Customer> getCustomer();
 }

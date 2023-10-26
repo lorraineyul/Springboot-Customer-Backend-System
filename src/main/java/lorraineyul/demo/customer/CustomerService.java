@@ -1,10 +1,23 @@
 package lorraineyul.demo.customer;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
+import java.util.List;
+
+@Service
 public class CustomerService {
-    Customer getCustomer() {
-        return new Customer(1l, "James");
+
+    private final CustomerRepo customerRepo;
+
+    @Autowired
+    public CustomerService(CustomerRepo customerRepo) {
+        this.customerRepo = customerRepo;
+    }
+
+    List<Customer> getCustomer() {
+        return customerRepo.getCustomer();
     }
 }

@@ -1,4 +1,4 @@
-# Student Backend System
+# Customer Backend System
 A backend system to store customer information
 
 ## Tech Stack
@@ -10,3 +10,4 @@ A backend system to store customer information
 
 ## Features
 - CRUD
+- N Tier Architecture
