@@ -1,11 +1,14 @@
 package lorraineyul.demo.exception;
 
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 
-@ResponseStatus(value = HttpStatus.NOT_FOUND)
+import java.time.ZonedDateTime;
+
 public class NotFoundException extends RuntimeException {
     public NotFoundException(String message) {
         super(message);
     }
+
 }
