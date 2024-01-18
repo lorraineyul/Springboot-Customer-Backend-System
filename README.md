@@ -5,7 +5,6 @@ A backend system to store customer information
 - Java
 - Spring Boot
 - REST API
-- 
 - JPA
 
 ## Features
